@@ -1,4 +1,4 @@
-Based off of Andrej Karpathy's Youtube Videos. Below are two 1000 character samples from the model. They don't make any sense, but there is clear Shakespearean structure.
+Based off of Andrej Karpathy's Youtube videos. Below are two 1000 character samples from the model. They don't make any sense, but there is clear Shakespearean structure.
 
 1.
 That he did show the world of his country's son,
