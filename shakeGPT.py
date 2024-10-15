@@ -77,7 +77,7 @@ class Head(nn.Module):
         k = self.key(x)
         q = self.query(x)
         
-        wei = (q @ k.transpose(-2, -1) * C ** -0.5) # @ qk3.transpose(-2, -1) * C ** -0.5
+        wei = (q @ k.transpose(-2, -1) * C ** -0.5) 
         wei = wei.masked_fill(self.tril[:T, :T] == 0, float('-inf'))
         wei = F.softmax(wei, dim=-1)
         wei = self.dropout(wei)
