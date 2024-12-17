@@ -136,7 +136,7 @@ model = BigramLanguageModel()
 model.to(device)
 
 # Load the saved model parameters
-model.load_state_dict(torch.load('best_model4-0.pth', map_location=device))
+model.load_state_dict(torch.load('model_name.pth', map_location=device))
 model.eval()  # Set model to evaluation mode
 
 # Generate text
