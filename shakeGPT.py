@@ -201,7 +201,7 @@ for iter in range(max_iters):
         print(f"step {iter}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}")
         if losses['val'] < best_losses:
             best_loses = losses
-            torch.save(model.state_dict(), '/home/jwei/gpt/best_model4-0.pth')
+            torch.save(model.state_dict(), 'model_name.pth')
 
     # sample a batch of data
     xb, yb = get_batch('train')
